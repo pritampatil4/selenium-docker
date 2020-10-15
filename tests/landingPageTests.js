@@ -9,6 +9,7 @@ const landingPageTests = () => {
     });
 
     it('Checks logo on page', async () => {
+        await DRIVER.sleep(6000);
         await getElement('.z-navicat-header_svgLogo').isDisplayed();      
     });
 };
