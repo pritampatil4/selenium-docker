@@ -1,0 +1,36 @@
+{
+  "name": "selenium-docker",
+  "version": "1.0.0",
+  "description": "Running Selenium Tests on Docker Containers",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uitest": "jest -c config/jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/pritampatil4/selenium-docker.git"
+  },
+  "keywords": [
+    "Selenium",
+    "Docker"
+  ],
+  "author": "Pritam Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/pritampatil4/selenium-docker/issues"
+  },
+  "homepage": "https://gitlab.com/pritampatil4/selenium-docker#readme",
+
+  "env": {
+    "jest/globals": true
+  },
+
+  "devDependencies": {
+    "jest": "^26.5.2",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
