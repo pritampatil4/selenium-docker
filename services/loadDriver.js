@@ -1,8 +1,10 @@
 const webdriver = require("selenium-webdriver");
+require('dotenv').config();
 
-module.exports = () => {
+module.exports = (cap) => {
+    // return new webdriver.Builder().forBrowser(process.env.LOCALBROWSER).build();
     return new webdriver.Builder()
-    .forBrowser(process.env.LOCALBROWSER)
-    .usingServer(process.env.SELENIUM_HUB_URL)
-    .build();
+                 .usingServer(process.env.SELENIUM_HUB_URL)
+                 .withCapabilities(cap)
+                 .build();
 };
