@@ -40,7 +40,7 @@ On your terminal  - 
 
 npm install (installs all the dependencies)
 
-2. Start Docker: docker-compose -f <path-to-docker-compose-file> up -d
+2. Start Docker: docker-compose -f {path-to-docker-compose-file} up -d
 
 # Part 3 - Run the Tests
 
