@@ -1,11 +1,11 @@
 const { Builder,By } = require('selenium-webdriver');
 const {getElement} = require('../services/locatingStrategy');
-const BASE_URL = "http://www.zalando.de";
 
+require('dotenv').config();
 
 const landingPageTests = () => {
     beforeAll(async () => {
-        await DRIVER.get(BASE_URL);
+        await DRIVER.get(process.env.BASE_URL);
     });
 
     it('Checks logo on page', async () => {
